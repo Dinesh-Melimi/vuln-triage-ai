@@ -49,3 +49,7 @@ Every push runs GitHub Actions with:
 
 `sample/` contains a synthetic scan for a lab environment. It includes no real
 hosts or client data.
+
+## Threat model
+
+See [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md) for the STRIDE analysis of trust boundaries, threats, and mitigations.
