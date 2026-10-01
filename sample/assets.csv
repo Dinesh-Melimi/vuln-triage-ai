@@ -1,0 +1,4 @@
+host,criticality
+web01.lab.local,3
+10.0.1.20,2
+10.0.1.10,1

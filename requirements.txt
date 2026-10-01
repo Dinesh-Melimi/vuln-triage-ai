@@ -1,0 +1,2 @@
+defusedxml>=0.7.1
+anthropic>=0.40.0

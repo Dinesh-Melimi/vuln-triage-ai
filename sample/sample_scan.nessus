@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<NessusClientData_v2>
+  <Report name="Lab scan (synthetic data)">
+    <ReportHost name="10.0.1.10">
+      <ReportItem port="443" pluginID="104743" pluginName="TLS Version 1.0 Protocol Detection" severity="2">
+        <cvss3_base_score>6.5</cvss3_base_score>
+        <solution>Disable TLS 1.0 and enable TLS 1.2 or later.</solution>
+      </ReportItem>
+      <ReportItem port="22" pluginID="187315" pluginName="OpenSSH Terrapin Prefix Truncation" severity="2">
+        <cvss3_base_score>5.9</cvss3_base_score>
+        <cve>CVE-2023-48795</cve>
+        <solution>Upgrade OpenSSH to 9.6 or later.</solution>
+      </ReportItem>
+    </ReportHost>
+    <ReportHost name="10.0.1.20">
+      <ReportItem port="445" pluginID="97833" pluginName="SMBv1 Remote Code Execution (MS17-010)" severity="4">
+        <cvss3_base_score>8.1</cvss3_base_score>
+        <cve>CVE-2017-0144</cve>
+        <solution>Apply MS17-010 and disable SMBv1.</solution>
+      </ReportItem>
+      <ReportItem port="3389" pluginID="125313" pluginName="Remote Desktop Services RCE (BlueKeep)" severity="4">
+        <cvss3_base_score>9.8</cvss3_base_score>
+        <cve>CVE-2019-0708</cve>
+        <solution>Apply the May 2019 security update and enable NLA.</solution>
+      </ReportItem>
+    </ReportHost>
+    <ReportHost name="web01.lab.local">
+      <ReportItem port="443" pluginID="156860" pluginName="Apache Log4j RCE (Log4Shell)" severity="4">
+        <cvss3_base_score>10.0</cvss3_base_score>
+        <cve>CVE-2021-44228</cve>
+        <solution>Upgrade Log4j to 2.17.1 or later.</solution>
+      </ReportItem>
+      <ReportItem port="80" pluginID="85582" pluginName="Web Server Missing Security Headers" severity="1">
+        <cvss3_base_score>3.1</cvss3_base_score>
+        <solution>Add Content-Security-Policy and X-Frame-Options headers.</solution>
+      </ReportItem>
+      <ReportItem port="0" pluginID="19506" pluginName="Nessus Scan Information" severity="0" />
+    </ReportHost>
+  </Report>
+</NessusClientData_v2>
